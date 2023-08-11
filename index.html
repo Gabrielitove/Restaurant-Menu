@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.css">
+    <title>The Maresia</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="img/logo.png" alt="logo de la Maresia" id="header-img">
+          <h1>The Maresia</h1>
+        </div>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#order-form">Order Form</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="menu">
+        <h2>Menu</h2>
+        <article>
+          <div class="img-food">
+            <img src="img/avocado.jpg" alt="avocado">
+          </div>
+          <div class="description">
+            <h3>Avocado With Prawns</h3>
+            <p>
+              An avocado cut in half with pink sauce, shrimp, chia seeds and
+              strawberry garnish. <i>Price: 8$</i>
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="img-food">
+          <img src="img/cuttlefish.jpg" alt="cuttlefish">
+          </div>
+          <div class="description">
+            <h3>Grilled Cuttlefish</h3>
+            <p>
+              Grilled cuttlefish in green mojo sauce with salad. <i>Price: 25$</i>
+            </p>
+          </div>
+          </article>
+        <article>
+          <div class="img-food">
+            <img src="img/grilled-fish-and-seafood.jfif" alt="grilled fish and seafood">
+          </div>
+          <div class="description">
+            <h3>Grilled Fish and Seafood</h3>
+            <p>
+              Variety of grilled fish and seafood served with Canarian mojo sauce
+              and Canarian potatoes. <i>Price: 30$</i>
+            </p>
+          </div>
+        </article>
+      </section>
+      <section id="order-form">
+        <h2>Place Your Order</h2>
+
+        <form action="" method="post">
+          <div class="menu-order">
+            <label for="input-avocado" class="menu-label">Avocado With Prawns</label>
+            <input type="number" min="0" value="0" name="input-avocado" class="menu-input" required>
+          </div>
+          <div class="menu-order">
+            <label for="input-fish-seafood" class="menu-label">Grilled Fish and Seafood</label>
+            <input type="number" min="0" value="0" name="input-fish-seafood" class="menu-input" required>
+          </div>
+          <div class="menu-order">
+            <label for="input-cuttlefish" class="menu-label">Cuttlefish</label>
+            <input type="number" min="0" value="0" name="input-cuttlefish"class="menu-input" required>
+          </div>
+          
+          
+          <label for="sides" id="choose-sides">Choose Sides:</label>
+          <div class="sides">
+            <input type="radio" name="sides" value="fries" required> 
+            <label for="fries">Fries</label>
+          </div>
+
+          <div class="sides">
+            <input type="radio" name="sides" value="wrinkled potatoes" required>
+            <label for="wrinkled potatoes">Wrinkled Potatoes</label>
+          </div>
+
+          <div class="sides">
+            <input type="checkbox" name="sides" value="salad">
+            <label for="salad">Salad</label>
+          </div>
+          
+          
+          <label for="add-ons" id="add-ons">Add-ons:</label>
+
+          <div class="add-ons">
+            <input type="checkbox" name="add-ons" value="canary-sauce">
+            <label for="canary-sauce">canary Sauce</label>
+          </div>
+
+          <div class="add-ons">
+            <input type="checkbox" name="add-ons" value="bread">
+            <label for="bread">Bread</label>
+          </div>
+
+          <label for="special-requests" id="special-requests-label">Special Requests:</label>
+          <textarea id="special-requests" name="special-requests" rows="4" cols="50"></textarea>
+          <input type="submit" value="Go To Checkout" id="submit">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Made with love by: <br><a href="https://www.codedex.io/@Gabrielitove" target="_blank">https://www.codedex.io/@Gabrielitove</a></p>
+    </footer>
+  </body>
+</html>

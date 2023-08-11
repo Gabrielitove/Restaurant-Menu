@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 20vh;
+  width: 100%;
+  background-color: beige;
+  padding: 10px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  text-align: center;
+  justify-content: center;
+}
+
+
+#header-img {
+  height: 10vh;
+  width: 130px;
+}
+
+#menu {
+  padding: 20px;
+  text-align: center
+}
+
+#menu h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+#menu h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#menu p {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+#menu img {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+#order-form {
+  padding: 20px;
+  background-color: rgb(228, 228, 225);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#order-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.menu-label {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.menu-input {
+  width: 100px;
+  height: 20px;
+}
+
+.menu-order {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+}
+
+#choose-sides {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+
+.sides {
+  width: 80%;
+  margin: auto;
+}
+
+
+.sides input {
+  margin-left: 20px;
+  
+}
+
+.sides label {
+  font-size: 1.1rem;
+  margin-left: 5px;
+}
+
+#add-ons {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.add-ons {
+  width: 80%;
+  margin: auto;
+}
+
+.add-ons input {
+  margin-left: 20px;
+}
+
+.add-ons label {
+  font-size: 1.1rem;
+  margin-left: 5px;
+}
+
+#special-requests-label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+textarea {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+#submit {
+  height: 30px;
+  width: 150px;
+  margin: auto;
+  background-color: bisque;
+  color: brown;
+  border: none;
+  box-shadow: 1px 1px 6px black;
+  font-weight: bold;
+
+}
+
+#submit:hover{
+  background-color: rgb(236, 173, 96);
+  color: white;
+}
+
+footer {
+  height: 8vh;
+  background-color: rgb(209, 209, 209);
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+footer p {
+  height: 100%;
+  text-align: center;
+}
+
+@media (min-width: 650px) {
+  header {
+    height: 15vh;
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: space-around; 
+
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #header-img {
+    height: 10vh;
+    width: 130px;
+  }
+
+  nav a {
+    margin: 0 20px;
+    font-size: 1.8rem;
+    color: rgb(143, 12, 117);
+  }
+
+  nav a:hover {
+    color: rgb(58, 58, 58);
+    font-size: 2rem;
+  }
+
+  #menu {
+    padding: 40px;
+  }
+
+  #menu h2 {
+    font-size: 2.5rem;
+  }
+
+  #menu img {
+    width: 60%;
+  }
+
+  #menu p {
+    width: 60%;
+  }
+
+  #order-form {
+    padding: 40px;
+  }
+  
+  .menu-order {
+    width: 60%;
+  }
+
+  #choose-sides {
+    width: 60%;
+  }
+
+  .sides {
+    width: 60%;
+  }
+
+
+  #add-ons{
+    width: 60%;
+  }
+  .add-ons{
+    width: 60%;
+  }
+
+
+}
+
+@media (min-width: 950px) {
+  
+  header {
+    height: 8vh;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    
+  }
+
+  .logo {
+    height: 100%;
+  }
+
+  #header-img {
+    height: 80%;
+    width: 35%;
+  }
+
+  .logo h1 {
+    width: 100%;
+    margin-left: 20px;
+  }
+  
+  nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  article {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 100px;
+    background-color: beige;
+    width: 100%;
+    max-width: 934px;
+  }
+
+  .img-food {
+    width:60%;
+  }
+
+  #menu {
+    scroll-margin-top: 100px;
+  }
+
+  #menu h2 {
+    margin-bottom: 80px;
+  }
+
+  #menu img {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #menu h3 {
+    font-size: 2.2rem;
+  }
+
+  #menu p {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  #order-form h2 {
+    font-size: 2.5rem;
+  }
+
+  .menu-label {
+    font-size: 1.7rem;
+  }
+
+  .menu-input {
+    height: 25px;
+  }
+
+  #choose-sides {
+    font-size: 1.7rem;
+  }
+
+  #add-ons {
+    font-size: 1.7rem;
+  }
+
+  .sides label {
+    font-size: 1.4rem;
+  }
+
+  .sides input {
+    width: 20px;
+    height: 15px;
+  }
+
+  .add-ons label {
+    font-size: 1.4rem;
+
+  }
+  .add-ons input {
+    width: 20px;
+    height: 15px;
+  }
+
+  #special-requests-label {
+    font-size: 1.8rem;
+  }
+
+  textarea {
+    width: 60%;
+    height: 100px;
+    max-width: 650px;
+    
+  }
+
+  .menu-order, .add-ons,.sides,#add-ons, #choose-sides {
+    max-width: 650px;
+  }
+  
+
+}
